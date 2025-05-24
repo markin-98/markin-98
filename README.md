@@ -2,7 +2,7 @@
 
 ### Estudante de ADS | Foco em Desenvolvimento Full Stack
 
-Atualmente curso **Análise e Desenvolvimento de Sistemas na PUC Minas** e estou em busca da minha primeira oportunidade na área de tecnologia.
+Atualmente curso **Análise e Desenvolvimento de Sistemas na PUC Minas** e estou em busca da minha primeira oportunidade na área da tecnologia.
 
 ### 📊 Tecnologias que estudo e pratico:
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
