@@ -2,7 +2,7 @@
 
 ### Estudante de ADS | Foco em Desenvolvimento Full Stack
 
-Atualmente curso **Análise e Desenvolvimento de Sistemas na PUC Minas** e estou em busca da minha primeira oportunidade na área da tecnologia.
+Atualmente curso **Análise e Desenvolvimento de Sistemas na PUC Minas** e estou cada dia mais me aprofundando na área da tecnologia.
 
 ### 📊 Tecnologias que estudo e pratico:
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -20,6 +20,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas na PUC Minas** e estou
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="VS Code"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="40" alt="Visual Studio"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="Figma"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"/>
 </div>
 
 ---
