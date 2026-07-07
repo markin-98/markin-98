@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" width="860" height="320">
+  <defs>
+    <!-- Glow filter for border -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glowStrong" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Gradient for Marcus name -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dcfff"/>
+      <stop offset="50%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+
+    <!-- Gradient for border glow -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7aa2f7">
+        <animate attributeName="stop-color" values="#7aa2f7;#bb9af7;#7dcfff;#7aa2f7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#bb9af7">
+        <animate attributeName="stop-color" values="#bb9af7;#7dcfff;#7aa2f7;#bb9af7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Clip paths for typing effect -->
+    <clipPath id="clip-line1">
+      <rect x="38" y="88" height="22" width="0">
+        <animate attributeName="width" from="0" to="200" dur="0.8s" begin="0.5s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-line2">
+      <rect x="38" y="136" height="52" width="0">
+        <animate attributeName="width" from="0" to="440" dur="1.2s" begin="1.8s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-line3">
+      <rect x="38" y="200" height="22" width="0">
+        <animate attributeName="width" from="0" to="240" dur="0.8s" begin="3.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-line4">
+      <rect x="38" y="232" height="24" width="0">
+        <animate attributeName="width" from="0" to="600" dur="1.4s" begin="4.6s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- Particle animations -->
+    <radialGradient id="particleGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer glow border -->
+  <rect x="3" y="3" width="854" height="314" rx="12" ry="12"
+        fill="none" stroke="url(#borderGrad)" stroke-width="2.5"
+        filter="url(#glowStrong)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Main window background -->
+  <rect x="1" y="1" width="858" height="318" rx="12" ry="12" fill="#0d1117"/>
+
+  <!-- Title bar -->
+  <rect x="1" y="1" width="858" height="42" rx="12" ry="12" fill="#16161e"/>
+  <rect x="1" y="25" width="858" height="18" fill="#16161e"/>
+
+  <!-- Traffic lights -->
+  <circle cx="28" cy="22" r="7" fill="#ff5f57"/>
+  <circle cx="50" cy="22" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="22" r="7" fill="#28c840"/>
+
+  <!-- Window title -->
+  <text x="430" y="27" text-anchor="middle" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="13" fill="#565f89">marcus@tech-studio: ~/portfolio — zsh</text>
+
+  <!-- Terminal content area -->
+  <rect x="1" y="43" width="858" height="276" rx="0" ry="0" fill="#0d1117"/>
+  <rect x="1" y="295" width="858" height="24" rx="0" ry="12" fill="#0d1117"/>
+
+  <!-- Line 1: $ whoami -->
+  <g clip-path="url(#clip-line1)">
+    <text x="38" y="106" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="16" fill="#7aa2f7">$</text>
+    <text x="55" y="106" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="16" fill="#a9b1d6"> whoami</text>
+  </g>
+
+  <!-- Line 2: Marcus Vinícius (large gradient) -->
+  <g clip-path="url(#clip-line2)">
+    <text x="38" y="175" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="44" font-weight="bold" fill="url(#nameGrad)">Marcus Vinícius</text>
+  </g>
+
+  <!-- Line 3: $ cat role.txt -->
+  <g clip-path="url(#clip-line3)">
+    <text x="38" y="218" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="16" fill="#7aa2f7">$</text>
+    <text x="55" y="218" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="16" fill="#a9b1d6"> cat role.txt</text>
+  </g>
+
+  <!-- Line 4: Full Stack Developer... -->
+  <g clip-path="url(#clip-line4)">
+    <text x="38" y="254" font-family="'SF Mono', 'Menlo', 'Monaco', monospace" font-size="16" fill="#9ece6a">Full Stack Developer · Estudante ADS @ PUC Minas</text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="38" y="264" width="10" height="18" fill="#7aa2f7" rx="1">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.1s" begin="6.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0" dur="6.2s" begin="0s" fill="freeze"/>
+  </rect>
+
+  <!-- Floating particles -->
+  <!-- Particle 1 -->
+  <circle cx="780" cy="80" r="2.5" fill="#7aa2f7" opacity="0.6">
+    <animate attributeName="cy" values="80;60;80" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Particle 2 -->
+  <circle cx="810" cy="200" r="2" fill="#bb9af7" opacity="0.5">
+    <animate attributeName="cy" values="200;180;200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Particle 3 -->
+  <circle cx="750" cy="260" r="1.8" fill="#7dcfff" opacity="0.4">
+    <animate attributeName="cy" values="260;240;260" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.15;0.4" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Particle 4 -->
+  <circle cx="820" cy="130" r="1.5" fill="#7aa2f7" opacity="0.35">
+    <animate attributeName="cy" values="130;110;130" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.08;0.35" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Particle 5 -->
+  <circle cx="840" cy="290" r="2" fill="#bb9af7" opacity="0.4">
+    <animate attributeName="cy" values="290;270;290" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.12;0.4" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
